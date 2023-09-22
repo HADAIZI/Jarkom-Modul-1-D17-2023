@@ -6,25 +6,53 @@
 ![Alt text](image-1.png)
 ![Alt text](image-2.png)
 
+### Penjelasan Nomor 1:
+User melakukan berbagai aktivitas dengan menggunakan protokol FTP. Salah satunya adalah mengunggah suatu file.
 A.  Berapakah sequence number (raw) pada packet yang menunjukkan aktivitas tersebut?
-Your answer: 258040667
+
+Dari soal yang diberikan, kita tahu bahwa protokol yang digunakan adalah FTP dan aktivitas yang digunakan adalah mengunggah file. Karena terjadinya aktivitas upload file, maka server akan merequest dan membaca konten apa saja yang berada di file yang akan di upload, yakni melalui command STOR. Nah, maka dari itu untuk filtering-nya kita hanya perlu menggunakan 
+
+```ftp.request.command == "STOR"```
+
+sehingga packet yang merekam aktivitas upload file dapat dilihat sebagaimana pada gambar 1.
+
+Karena pertanyaannya adalah berapa sequence number (raw) pada packet itu, maka kita hanya perlu membuka packet dan navigasi ke bagian Transmission Control Protocol (sebagaimana pada gambar 2) dan lihat jawabannya.
+
+```Your answer: 258040667```
 
 B. Berapakah acknowledge number (raw) pada packet yang menunjukkan aktivitas tersebut?
-Your answer: 1044861039
+
+Sama hal-nya untuk mencari acknowledge number (raw) nya yaitu dengan cara buka packet yang sama dan navigasi ke bagian Transmission Control Protocol dan nilai acknowledge number (raw) nya berada beberapa baris setelah sequence number.
+
+```Your answer: 1044861039```
 
 C. Berapakah sequence number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
-Your answer: 1044861039
+
+Sementara itu, untuk melihat response dari aktivitas tersebut, disini saya melakukan filtering ftp dengan menggunakan nama file zip yang tadi ditemukan untuk soal a dan b, yakni GrabThePhisher. Oleh karena itu, untuk filtering kita perlu untuk menulis
+
+```ftp.response.arg contains "GrabThePhisher"```
+
+Sehingga kita dapat hasil packet untuk response aktivitas tersebut. Dari sini kita bisa membuka packetnya dan melihat sequence number (raw) nya dengan cara yang sama dengan soal sebelumnya.
+
+```Your answer: 1044861039```
 
 D. Berapakah acknowledge number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
+
+Untuk soal D juga sama, dari hasil packet yang didapat di soal C, kita hanya perlu melihat beberapa baris dibawah sequence number (raw) dan kita mendapatkan hasil acknowledge number (raw) nya.
+
+```
 Your answer: 258040696
 
 Correct answer!
 Correct answers, you are good at addressing!
 Here is your flag: Jarkom2023{y0u_r_g00d_4t_4dr3ssing_LrMwEsI60672593}
+```
 
 ## No. 2
 
 ![Alt text](image-3.png)
+
+### Penjelasan Nomor 2
 Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!
 
 Your answer: gunicorn
@@ -35,6 +63,9 @@ Here is your flag: Jarkom2023{9unic0rn_1s_aH7s2eeJ7Nv690E_c00l}
 
 ## No. 3
 ![Alt text](image-4.png)
+
+### Penjelasan Nomor 3
+
 a. Berapa banyak paket yang tercapture dengan IP source maupun destination address adalah 239.255.255.250 dengan port 3702?
 Your answer: 21
 Correct answer!
