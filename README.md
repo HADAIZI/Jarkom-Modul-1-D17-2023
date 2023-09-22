@@ -62,6 +62,11 @@ Here is your flag: Jarkom2023{y0u_r_g00d_4t_4dr3ssing_LrMwEsI60672593}
 ### Penjelasan Nomor 2
 **Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!**
 
+**A.Filter HTTP**
+**Cari Domain yg Digunakan sesuai Dengan Domain Jarkom**
+**Lihat Server**
+
+
 Your answer: gunicorn
 
 Correct answer!
@@ -179,6 +184,10 @@ Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggema
 ![Alt text](image-15.png)
 Berapa jumlah packet yang menuju IP 184.87.193.88?
 
+### Penjelasan no 7
+**1. Filter IP Destination Sesuai yg Diminta**
+**2.Hitung Port Yang Muncul**
+
 Your answer: 6
 
 Correct answer!
@@ -188,7 +197,8 @@ Here is your flag: Jarkom2023{PFAJ5oMj7rFG4013Yp_4n0th3r_f1lt3ring}
 ## No. 8
 ![Alt text](image-16.png)
 Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80! (Jika terdapat lebih dari 1 port, maka urutkan sesuai dengan abjad)
-
+### Penjelasan no 8
+**1. Masukkan Querrynya pada Filter**
 Your answer: tcp.dstport == 80 || udp.dstport == 80
 
 Correct answer!
@@ -196,13 +206,18 @@ Correct answer!
 ## No. 9
 ![Alt text](image-17.png)
 Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari alamat 10.51.40.1 tetapi tidak menuju ke alamat 10.39.55.34!
-
+### Penjelasan no 9
+**1. Masukkan Querrynya pada Filter**
 Your answer: ip.src == 10.51.40.1 && ip.dst != 10.39.55.34
 
 Correct answer!
 
 ## No. 10
 ![Alt text](image-18.png)
+### Penjelasan no 9
+**1. Masukkan Telnet pada Filter**
+**Bruteforce (Cek 1 1)**
+
 Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet, format [username]:[password]!
 
 Your answer: dhafin:kesayangannyak0k0
