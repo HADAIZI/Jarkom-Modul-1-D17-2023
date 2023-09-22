@@ -172,8 +172,25 @@ Your answer: 74.53.140.153
 Correct answer!
 ```
 
-## No. 6
-Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggemar film detektif. sebagai teman yang baik, Ia selalu mengajak slamet untuk bermain valoranT bersama. suatu malam, terjadi sebuah hal yang tak terdUga. ketika udin mereka membuka game tersebut, laptop udin menunjukkan sebuah field text dan Sebuah kode Invalid bertuliskan "server SOURCE ADDRESS 7812 is invalid". ketika ditelusuri di google, hasil pencarian hanya menampilkan a1 e5 u21. jiwa detektif slamet pun bergejolak. bantulah udin dan slamet untuk menemukan solusi kode error tersebut.
+## No. 6 (HASIL REVISI)
+
+**Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggemar film detektif. sebagai teman yang baik, Ia selalu mengajak slamet untuk bermain valoranT bersama. suatu malam, terjadi sebuah hal yang tak terdUga. ketika udin mereka membuka game tersebut, laptop udin menunjukkan sebuah field text dan Sebuah kode Invalid bertuliskan "server SOURCE ADDRESS 7812 is invalid". ketika ditelusuri di google, hasil pencarian hanya menampilkan a1 e5 u21. jiwa detektif slamet pun bergejolak. bantulah udin dan slamet untuk menemukan solusi kode error tersebut.**
+
+![Alt text](image-19.png)
+
+Dari soal tersebut kita memiliki 4 clue,
+* Huruf kapital yang digabungkan pada soal menjadi SUBSTITUSI
+* Cipher a1z26 yakni mengubah huruf-angka atau angka-huruf
+* Rentang huruf A-R, 1-18, 6 huruf
+* SOURCE ADRESS adalah clue terbesar.
+
+Dari soal dan clue tersebut, bisa diambil kesimpulan bahwa kita perlu pergi ke packet 7812, ambil source ip nya, dan ubah angka-angkanya menggunakan a1z26. Sehingga didapat hasil ciphernya sebagaimana berikut
+
+```104.18.14.101 --->  10-4-18-14-10-1 ```
+
+didapatkan jawabannya adalah
+
+```JDRNJA```
 
 ## No. 7
 ![Alt text](image-15.png)
