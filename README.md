@@ -13,10 +13,10 @@ Perkenalkan kami dari kelas ``Jaringan Komputer D Kelompok  D17``, dengan Anggot
 ![Alt text](image-2.png)
 
 ### Penjelasan Nomor 1:
-**
-User melakukan berbagai aktivitas dengan menggunakan protokol FTP. Salah satunya adalah mengunggah suatu file.
-A.  Berapakah sequence number (raw) pada packet yang menunjukkan aktivitas tersebut?
-** 
+**User melakukan berbagai aktivitas dengan menggunakan protokol FTP. Salah satunya adalah mengunggah suatu file.**
+
+**A.  Berapakah sequence number (raw) pada packet yang menunjukkan aktivitas tersebut?**
+
 Dari soal yang diberikan, kita tahu bahwa protokol yang digunakan adalah FTP dan aktivitas yang digunakan adalah mengunggah file. Karena terjadinya aktivitas upload file, maka server akan merequest dan membaca konten apa saja yang berada di file yang akan di upload, yakni melalui command STOR. Nah, maka dari itu untuk filtering-nya kita hanya perlu menggunakan 
 
 ```ftp.request.command == "STOR"```
@@ -73,8 +73,9 @@ Here is your flag: Jarkom2023{9unic0rn_1s_aH7s2eeJ7Nv690E_c00l}
 
 ### Penjelasan Nomor 3
 
-**Dapin sedang belajar analisis jaringan. Bantulah Dapin untuk mengerjakan soal berikut:
-a. Berapa banyak paket yang tercapture dengan IP source maupun destination address adalah 239.255.255.250 dengan port 3702?**
+**Dapin sedang belajar analisis jaringan. Bantulah Dapin untuk mengerjakan soal berikut:**
+
+**a. Berapa banyak paket yang tercapture dengan IP source maupun destination address adalah 239.255.255.250 dengan port 3702?**
 
 Untuk soal nomor 3A, cara mencari banyaknya paket dengan ip destination address ``239.255.255.250`` dan port 3702 adalah 
 
